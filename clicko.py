@@ -2,16 +2,9 @@ import pyautogui as pa
 import time
 import argparse
 
-
-def getPosition():
-    print("Getting mouse position in 5 seconds")
-    time.sleep(5)
-    return pa.position()
-
-
 if __name__ == '__main__':
 
-    parser = argparse.ArgumentParser(description="click every x seconds a certain point of the screen")
+    parser = argparse.ArgumentParser(description="submits a task every x seconds (default 90)")
     parser.add_argument("-t", type=int, default=90, help="use this option to set sleep time between clicks")
     args = parser.parse_args()
 
