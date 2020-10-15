@@ -7,3 +7,7 @@ Auto submit for baseline platform using python3.
 The tool runs locally without interferring with the platform.
 ## Requirements
 - pyautogui
+- playsound
+
+To install required libs please run `pip install -r requirements.txt`.
+You could also use a virtual environment such as conda or venv to avoid stomping on your filesystem.
